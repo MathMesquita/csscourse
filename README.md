@@ -15,8 +15,8 @@
 
 ### Rules e declaration blocks
 
-- Rules antes do dois pontos
-- Declaration depois do dois pontos entre `{...}`
+- Rules antes das chaves
+- Declaration entre as chaves `{...}`
 
 ### Box model
 
