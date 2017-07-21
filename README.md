@@ -20,7 +20,7 @@
 
 ### Box model
 
-- Box-sizing(`border-box` `content-box`)
+- Box-sizing([`content-box`](https://mdn.mozillademos.org/files/13647/box-model-standard-small.png) [`border-box`](https://mdn.mozillademos.org/files/13649/box-model-alt-small.png))
 - Overflow(`auto` `hidden` `visible`)
 - Background-clip(`border-box` `padding-box` `content-box`)
 - Display(`block` `inline` `inline-block`)
