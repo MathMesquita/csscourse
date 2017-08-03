@@ -3,13 +3,16 @@
 ## Ementa
 
 - [Boxes](#boxes)
-- Rules e declaration blocks
-- box model(`border-box` e `content-box`, `overflow`, `background-clip`)
-- Margin collapse
-- Seletores
-- Unidades
-- Ordem de preferencia
-- Debug
+- [Rules e declaration blocks](#rules-e-declaration-blocks)
+- [box model](#box-model)
+- [Margin collapse](#margin-collapse)
+- [Seletores](#seletores)
+- [Unidades](#unidades)
+- [Ordem de preferencia](#ordem-de-preferencia)
+- [Debug](#debug)
+- [Flexbox](#flexbox)
+  - [Flex container](#flex-container)
+  - [Flex item](#flex-item)
 
 ### Boxes
 
@@ -35,10 +38,10 @@
 ### Seletores
 
 - Seletores simples(`elementos`, `classes` e `ids`)
-- Seletores de atributo(`[attr[=]]`)
-- Pseudo classes
+- [Seletores de atributo](https://mathmesquita.me/2017/01/24/seletores-avancados-de-css.html)(`[attr[=]]`)
+- Pseudo classes([`parte 1`](https://mathmesquita.me/2017/01/25/seletores-avancados-de-css-2.html) [`parte 2`](https://mathmesquita.me/2017/02/22/seletores-avancados-de-css-3.html))
 - Pseudo elementos
-- Combinadores (`,` ` ` `>` `+` `~`)
+- [Combinadores](https://mathmesquita.me/2017/01/24/seletores-avancados-de-css.html)(`,` ` ` `>` `+` `~`)
 
 ### Unidades
 
@@ -53,11 +56,27 @@
 - Especificidade(`1000` `100` `10` `1`)
 - Ordem no código
 
-### Debug(Hands on inspector)
+### Debug
 
+### Flexbox
 
+#### Flex container
 
+- [`flex-direction`](https://css-tricks.com/wp-content/uploads/2013/04/flex-direction2.svg)(`row` `row-reverse` `column` `column-reverse`)
+- [`flex-wrap`](https://css-tricks.com/wp-content/uploads/2014/05/flex-wrap.svg)(`nowrap` `wrap` `wrap-reverse`)
+- [`flex-flow`](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)(`<flex-direction> <flex-wrap>`)
+- [`justify-content`](https://cdn.css-tricks.com/wp-content/uploads/2013/04/justify-content-2.svg)(`flex-start` `flex-end` `center` `space-between` `space-around` `space-evenly`)
+- [`align-items`](https://cdn.css-tricks.com/wp-content/uploads/2014/05/align-items.svg)(`stretch` `flex-start` `flex-end` `center` `baseline`)
+- [`align-content`](https://css-tricks.com/wp-content/uploads/2013/04/align-content.svg)(`flex-start` `flex-end` `center` `stretch` `space-between` `space-around`)
 
+#### Flex item
+
+- [`order`](https://css-tricks.com/wp-content/uploads/2013/04/order-2.svg)
+- [`flex-grow`](https://css-tricks.com/wp-content/uploads/2014/05/flex-grow.svg)
+- `flex-shrink`
+- [`flex-basis`](https://www.w3.org/TR/css-flexbox-1/images/rel-vs-abs-flex.svg)
+- `flex`(`<flex-grow> <flex-shrink> <flex-basis>`)
+- [`align-self`](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg)
 
 
 
