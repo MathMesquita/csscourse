@@ -10,6 +10,7 @@
 - [Unidades](#unidades)
 - [Ordem de preferencia](#ordem-de-preferencia)
 - [Debug](#debug)
+- [Float](#float)
 - [Flexbox](#flexbox)
   - [Flex container](#flex-container)
   - [Flex item](#flex-item)
@@ -57,6 +58,16 @@
 - Ordem no código
 
 ### Debug
+
+- Stylesheets
+- Computed
+- Box-model
+
+### Float
+
+- float(`none` `left` `right` `inherit`)
+- clear(`none` `both` `left` `right`)
+- Height collapse(`empty div` `::after` `display: flow-root`)
 
 ### Flexbox
 
