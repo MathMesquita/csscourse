@@ -14,6 +14,7 @@
 - [Flexbox](#flexbox)
   - [Flex container](#flex-container)
   - [Flex item](#flex-item)
+- [CSS Patterns](#css-patterns)
 
 ### Boxes
 
@@ -89,13 +90,9 @@
 - `flex`(`<flex-grow> <flex-shrink> <flex-basis>`)
 - [`align-self`](https://css-tricks.com/wp-content/uploads/2014/05/align-self.svg)
 
+### Css Patterns
 
-
-
-
-
-
-
-
-
-
+- BEMCSS(Block Element Module CSS)
+- SMACSS(Scalable and Modular Architecture for CSS)
+- RSCSS(Reasonable System for CSS Stylesheet Structure)
+- MaintainableCSS
