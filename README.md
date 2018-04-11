@@ -92,16 +92,10 @@
 
 ### Css Patterns
 
-- [BEMCSS](http://getbem.com/introduction/)(Block Element Modifier CSS)
 - [SMACSS](https://smacss.com)(Scalable and Modular Architecture for CSS)
+- [BEMCSS](http://getbem.com/introduction/)(Block Element Modifier CSS)
 - [RSCSS](http://rscss.io)(Reasonable System for CSS Stylesheet Structure)
 - [MaintainableCSS](https://maintainablecss.com)
-
-#### BEMCSS
-
-- Block *(.block)*
-- Element *(.block__element)*
-- Modifier *(.block__element .block__element--modifier)* *(.block .block--modifier)*
 
 #### SMACSS
 
@@ -118,6 +112,12 @@
   - Dependente do uso de javascript
 - Theme *(Quando necessrio, irá descrever como os layouts e modules deverão aparentar)*
   - Separado em outros arquivos *(mod-name.css, theme.css)*
+
+#### BEMCSS
+
+- Block *(.block)*
+- Element *(.block__element)*
+- Modifier *(.block__element .block__element--modifier)* *(.block .block--modifier)*
 
 #### RSCSS
 
