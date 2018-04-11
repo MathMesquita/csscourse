@@ -92,7 +92,77 @@
 
 ### Css Patterns
 
-- [BEMCSS](http://getbem.com/introduction/)(Block Element Module CSS)
+- [BEMCSS](http://getbem.com/introduction/)(Block Element Modifier CSS)
 - [SMACSS](https://smacss.com)(Scalable and Modular Architecture for CSS)
 - [RSCSS](http://rscss.io)(Reasonable System for CSS Stylesheet Structure)
 - [MaintainableCSS](https://maintainablecss.com)
+
+#### BEMCSS
+
+- Block *(.block)*
+- Element *(.block__element)*
+- Modifier *(.block__element .block__element--modifier)* *(.block .block--modifier)*
+
+#### SMACSS
+
+- Base *(input, input\[type=checkbox\], h1, p)*
+  - Importancia do reset.css
+- Layout *(Wrappers para modules)*
+  - *(.l-layout, #sidebar, .l-inline, .l-inline #sidebar)*
+- Module *(Partes reutilizaveis)*
+  - *(.module, .cart, .form, .form-sidebar)*
+  - Modulo subclasse
+- State *(Estado do seu componente)*
+  - *(.is-state, .cart.is-empty, .form.is-invalid)*
+  - Pode ser usado em modulos e layouts
+  - Dependente do uso de javascript
+- Theme *(Quando necessrio, irá descrever como os layouts e modules deverão aparentar)*
+  - Separado em outros arquivos *(mod-name.css, theme.css)*
+
+#### RSCSS
+
+##### Componentes
+
+- Nomenclatura *(No minimo 2 palavras)*
+  - .cart-item, .header-logo
+  
+##### Elementos
+
+- Nomenclatura de elementos *(Uma unica palavra)*
+  - .cart-item > .title, .header-logo > .acomlogo
+
+##### Variantes
+
+- Nomenclatura de Variantes *(Prefixado com -)*
+  - .cart-item.-small, .header-logo > .acomlogo.-blue
+  
+#### MaintanableCSS
+
+- Semantica *(.col-md.red.pb3.m10)* *(.basket)*
+  - Legibilidade
+  - Facilidade para responsivo
+  - Facilidade para pesquisar *ctrl+f*
+  - Reduz risco de mudanças indesejadas
+  - Não tem diferença de inline style
+  - Hooks para testes automatizados
+  - Hooks para o JS
+  - Mais facil para debugar
+  - Recomendado na doc do HTML
+  - Não causa confusão ao estilizar estados como *:hover*
+  - Diminui o tamanho do HTML, CSS pode e deve ser cacheado
+- Reuso e ID's
+- Convenção *(.\<module\>\[-component\]\[-state\]\[--modifier\])*
+  - .basket
+  - .basket-item
+  - .basket-item-isOutOfStock
+- Modules vs Components
+  - Modules são feito de componentes
+  - Modules são distintos na sua aplicação, e combinados formam estruturas complexas
+- States
+  - Fechado x Aberto, Habilitado x Desabilitado
+  - *(.basket .basket-hasInvalidproducts)*
+- Modifiers
+  - Diferentemente do estado, modifiers so usados quando as diferenças são conhecidas
+  - *(.basket .basket--suba, .product .product--phone)*
+- Versionamento para teste A/B
+  - *(.basket, .basket2)*
