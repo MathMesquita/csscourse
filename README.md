@@ -92,7 +92,7 @@
 
 ### Css Patterns
 
-- BEMCSS(Block Element Module CSS)
-- SMACSS(Scalable and Modular Architecture for CSS)
-- RSCSS(Reasonable System for CSS Stylesheet Structure)
-- MaintainableCSS
+- [BEMCSS](http://getbem.com/introduction/)(Block Element Module CSS)
+- [SMACSS](https://smacss.com)(Scalable and Modular Architecture for CSS)
+- [RSCSS](http://rscss.io)(Reasonable System for CSS Stylesheet Structure)
+- [MaintainableCSS](https://maintainablecss.com)
