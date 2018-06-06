@@ -15,6 +15,9 @@
   - [Flex container](#flex-container)
   - [Flex item](#flex-item)
 - [CSS Patterns](#css-patterns)
+- [Grid](#grid)
+  - [Grid container](#grid-container)
+  - [Grid item](#grid-item)
 
 ### Boxes
 
@@ -166,3 +169,40 @@
   - *(.basket .basket--suba, .product .product--phone)*
 - Versionamento para teste A/B
   - *(.basket, .basket2)*
+
+### Grid
+
+#### Grid container
+
+- `display` (`grid`, `inline-grid`)
+- `grid-template-columns` (`<track-size>` `<line-name>`)
+- `grid-template-rows` (`<track-size>` `<line-name>`)
+- `grid-template-areas` ("`<grid-area-name>` | `.` | `none` | ...")
+- `grid-template`(`<grid-template-rows> / <grid-template-columns>`)
+- `grid-column-gap` (`<line-size>`)
+- `grid-row-gap` (`<line-size>`)
+- `grid-gap`(`<grid-row-gap> ? <grid-column-gap>`)
+- `justify-items` (`start` `end` `center` `stretch`)
+- `align-items` (`start` `end` `center` `stretch`)
+- `place-items` (`<align-items> ? <justify-items>`)
+- `justify-content` (_igual flexbox_)
+- `align-content` (_igual flexbox_)
+- `place-content` (`<align-content> ? <justify-content>`)
+- `grid-auto-columns` (`<track-size>`)
+- `grid-auto-rows` (`<track-size>`)
+- `grid-auto-flow` (`row` `column` `row dense` `column dense`)
+- `grid` (`<grid-template>` `<grid-template-rows> / [auto-flow ?&& dense] <grid-auto-columns>` `[auto-flow ?&& dense] <grid-auto-rows> / <grid-template-columns>`)
+
+
+#### Grid item
+
+- `grid-column-start` (`<line>` `span <number>` `span <name>` `auto`)
+- `grid-column-end` (`<line>` `span <number>` `span <name>` `auto`)
+- `grid-row-start` (`<line>` `span <number>` `span <name>` `auto`)
+- `grid-row-end` (`<line>` `span <number>` `span <name>` `auto`)
+- `grid-column` (`<start-line> / <end-line>`)
+- `grid-row` (`<start-line> / <end-line>`)
+- `grid-area` (`<row-start> / <column-start> / <row-end> / <column-end>`)
+- `justify-self` (`start` `end` `center` `stretch`)
+- `align-self` (`start` `end` `center` `stretch`)
+- `place-self` (`<align-self> ? <justify-self>`)
